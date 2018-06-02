@@ -1,0 +1,267 @@
+###############################################################################
+#                                                                             #
+# IAR C/C++ Compiler V8.10.3.10338/W32 for 8051         28/May/2018  19:00:17 #
+# Copyright 2004-2011 IAR Systems AB.                                         #
+#                                                                             #
+#    Core               =  plain                                              #
+#    Code model         =  banked                                             #
+#    Data model         =  large                                              #
+#    Calling convention =  xdata reentrant                                    #
+#    Constant location  =  data_rom                                           #
+#    Dptr setup         =  1,16                                               #
+#    Source file        =  C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\So #
+#                          urce\uart.c                                        #
+#    Command line       =  -f C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ #
+#                           ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg     #
+#                          (-DCPU32MHZ -DROOT=__near_func                     #
+#                          -DMAC_CFG_APP_PENDING_QUEUE=TRUE                   #
+#                          -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8         #
+#                          -DMAC_CFG_RX_MAX=5 -DZDO_COORDINATOR -DRTR_NWK)    #
+#                          -f C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ #
+#                           ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg    #
+#                          (-DZIGBEEPRO -DSECURE=0 -DZG_SECURE_DYNAMIC=0      #
+#                          -DREFLECTOR -DDEFAULT_CHANLIST=0x00000800          #
+#                          -DZDAPP_CONFIG_PAN_ID=0xFFF1                       #
+#                          -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MA #
+#                          SK=0x007F -DBEACON_REQUEST_DELAY=100               #
+#                          -DBEACON_REQ_DELAY_MASK=0x00FF                     #
+#                          -DLINK_STATUS_JITTER_MASK=0x007F                   #
+#                          -DROUTE_EXPIRY_TIME=30 -DAPSC_ACK_WAIT_DURATION_PO #
+#                          LLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7             #
+#                          -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3    #
+#                          -DNWK_MAX_DATA_RETRIES=2                           #
+#                          -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9         #
+#                          -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40           #
+#                          -DNWK_MAX_BINDING_ENTRIES=4                        #
+#                          -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01,  #
+#                          0x03, 0x05, 0x07, 0x09, 0x0B, 0x0D, 0x0F, 0x00,    #
+#                          0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C, 0x0D}"         #
+#                          -DMAC_MAX_FRAME_SIZE=116                           #
+#                          -DZDNWKMGR_MIN_TRANSMISSIONS=20 "-DCONST=const     #
+#                          __code" -DGENERIC=__generic                        #
+#                          -DRFD_RCVC_ALWAYS_ON=FALSE -DPOLL_RATE=1000        #
+#                          -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100)   #
+#                          -DREJOIN_POLL_RATE=440 C:\Users\chaizong\Desktop\3 #
+#                          .π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zsta #
+#                          ck\Samples\SampleApp\Source\uart.c -D ZTOOL_P1 -D  #
+#                          xMT_TASK -D xMT_SYS_FUNC -D xMT_ZDO_FUNC -D        #
+#                          LCD_SUPPORTED=DEBUG -lC C:\Users\chaizong\Desktop\ #
+#                          3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zst #
+#                          ack\Samples\SampleApp\CC2530DB\CoordinatorEB\List\ #
+#                           -lA C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ› #
+#                          ¥´ ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleA #
+#                          pp\CC2530DB\CoordinatorEB\List\ --diag_suppress    #
+#                          Pe001,Pa010 -o C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ #
+#                          ¯-Œﬁœﬂ ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Sampl #
+#                          es\SampleApp\CC2530DB\CoordinatorEB\Obj\ -e        #
+#                          --no_code_motion --debug --core=plain --dptr=16,1  #
+#                          --data_model=large --code_model=banked             #
+#                          --calling_convention=xdata_reentrant               #
+#                          --place_constants=data_rom --nr_virtual_regs 16    #
+#                          -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ #
+#                           ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\ -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯ #
+#                          -Œﬁœﬂ ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Sample #
+#                          s\SampleApp\CC2530DB\..\Source\ -I                 #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\ZMain\TI2530DB\ -I                 #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\hal\include\ -I   #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\hal\target\CC2530 #
+#                          EB\ -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝ #
+#                          æ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Samples\Sampl #
+#                          eApp\CC2530DB\..\..\..\..\..\Components\mac\includ #
+#                          e\ -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ #
+#                          ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Samples\Sample #
+#                          App\CC2530DB\..\..\..\..\..\Components\mac\high_le #
+#                          vel\ -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ  #
+#                          ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Samples\Samp #
+#                          leApp\CC2530DB\..\..\..\..\..\Components\mac\low_l #
+#                          evel\srf04\ -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ #
+#                          ¯-Œﬁœﬂ ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Sampl #
+#                          es\SampleApp\CC2530DB\..\..\..\..\..\Components\ma #
+#                          c\low_level\srf04\single_chip\ -I                  #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\mt\ -I            #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\osal\include\ -I  #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\services\saddr\   #
+#                          -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ #
+#                           ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\..\..\..\..\..\Components\services\sdata #
+#                          \ -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ› #
+#                          ¥´ ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleA #
+#                          pp\CC2530DB\..\..\..\..\..\Components\stack\af\    #
+#                          -I C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ #
+#                           ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp #
+#                          \CC2530DB\..\..\..\..\..\Components\stack\nwk\ -I  #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\stack\sapi\ -I    #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\stack\sec\ -I     #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\stack\sys\ -I     #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\stack\zdo\ -I     #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\zmac\ -I          #
+#                          C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\..\..\..\..\..\Components\zmac\f8w\ -Ohz    #
+#                          --require_prototypes                               #
+#    List file          =  C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\CoordinatorEB\List\uart.lst                 #
+#    Object file        =  C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ #
+#                          ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\CC #
+#                          2530DB\CoordinatorEB\Obj\uart.r51                  #
+#                                                                             #
+#                                                                             #
+###############################################################################
+
+C:\Users\chaizong\Desktop\3.π„≤•◊ÈÕ¯-Œﬁœﬂ ˝æ›¥´ ‰\ZStack-2.5.1a\Projects\zstack\Samples\SampleApp\Source\uart.c
+      1          #include "uart.h"
+      2          
+      3          unsigned char uart_buffer[UART_BUFFERLEN] = {'\0'};
+      4          unsigned char uart_count = 0;
+      5          
+      6          
+      7          //32MHZ us—” ±∫Ø ˝£ª
+      8          #pragma optimize=none
+      9          void uart_delayus(unsigned int n_us)
+     10          {
+     11              n_us>>=1;
+     12              while(n_us--)
+     13              {
+     14                    asm("NOP");
+     15                    asm("NOP");
+     16                    asm("NOP");
+     17                    asm("NOP");
+     18                    asm("NOP");
+     19                    asm("NOP");
+     20                    asm("NOP");
+     21                    asm("NOP");
+     22                    asm("NOP");
+     23                    asm("NOP");
+     24                    asm("NOP");
+     25                    asm("NOP");
+     26                    asm("NOP");
+     27                    asm("NOP");
+     28                    asm("NOP");
+     29              }
+     30          }
+     31          
+     32          
+     33          void set_32MHZ(void)
+     34          {
+     35              CLKCONCMD &= ~0x40;  //œµÕ≥ ±÷”‘¥Œ™32MHZæß’Ò£ª
+     36              while(CLKCONSTA & 0x40); //µ»¥˝ ±÷”Œ»∂®£ª
+     37              CLKCONCMD &= ~0x47; //œµÕ≥÷˜ ±÷”∆µ¬ £∫32MHZ;
+     38          }
+     39          
+     40          
+     41          void uart_init(unsigned char sys_clock , unsigned int baudrate)
+     42          {  
+     43               P0SEL  |= 0x0c;  //≈‰÷√P0.2∫ÕP0.3Œ™Õ‚…Ë£¨∑«GPIO
+     44               U0CSR  |= 0x80;  //≈‰÷√µ±«∞Œ™UART£¨∑«SPI
+     45              
+     46               //#define UART_BAUD_9600   598
+     47               //≈‰÷√≤®Ãÿ¬ £ª
+     48               U0GCR  &= 0xf0;
+     49               if(baudrate < 3000)
+     50               {
+     51                   U0BAUD = baudrate/10;  //59
+     52                   baudrate %= 10; //8
+     53                   baudrate += sys_clock;  //32M:0   16:1
+     54                   U0GCR |= baudrate;  
+     55               }
+     56               else
+     57               {
+     58                   U0BAUD = baudrate/100;
+     59                   baudrate %= 100;
+     60                   baudrate += sys_clock;
+     61                   U0GCR |= baudrate;
+     62               }
+     63               
+     64               UTX0IF  = 0;     //«Â≥˝÷–∂œ±Í÷æ
+     65               U0CSR |=  0x40;  //‘ –ÌΩ” ’ ˝æ›
+     66               IEN0  |=  0x04;  //¥Úø™Ω” ’÷–∂œ   
+     67               EA  = 1;  //¥Úø™◊‹÷–∂œ
+     68          }
+     69          
+     70          
+     71          void uart_sendstring(unsigned char *str , unsigned char len)
+     72          {
+     73               unsigned char i;
+     74               
+     75               U0CSR &= ~0x40;  //Ω˚÷πΩ” ’£ª
+     76               
+     77               for(i = 0; i < len; i++)
+     78               {
+     79                   U0DBUF = *str++;  //Ω´◊÷∑˚¥Æ“ª∏ˆ“ª∏ˆ◊÷Ω⁄–¥»Îª∫≥Â«¯£ª
+     80                   while(UTX0IF == 0); //µ»¥˝÷–∂œ±Í÷æŒª÷√1±Ì æ∑¢ÀÕÕÍ≥…£ª
+     81                   UTX0IF = 0; //÷ÿ–¬÷√0£ª
+     82               }
+     83               
+     84               U0CSR |= 0x40;  //‘ –ÌΩ” ’£ª
+     85          }
+     86          
+     87          
+     88          //¥Æø⁄Ω” ’÷–∂œ∑˛ŒÒ∫Ø ˝
+     89          #pragma vector = URX0_VECTOR  
+     90          __interrupt void UART0_ISR(void)  
+                                  ^
+Error[Pa045]: function "UART0_ISR" has no prototype
+     91          {  
+     92              URX0IF = 0;       // «Â÷–∂œ±Í÷æ;
+     93              
+     94              if(uart_count < UART_BUFFERLEN)
+     95                uart_buffer[uart_count++] = U0DBUF;
+     96          }
+     97          
+     98          
+     99          unsigned char uart_readstring(unsigned char *str , unsigned char len)
+    100          {
+    101                unsigned char i;
+    102                unsigned char re_val = 0;  
+    103          
+    104                //±ÿ“™µƒ—” ±
+    105                for(i = 0 ; i < 100 ;i++) //100ms
+    106                  uart_delayus(1000); 
+    107                
+    108                U0CSR &= ~0x40;  //Ω˚÷πΩ” ’£ª
+    109                
+    110                re_val = uart_count;
+    111          
+    112                for(i = 0; i<re_val && i<len; i++)
+    113                {
+    114                    str[i] = uart_buffer[i];
+    115                }
+    116                str[i] = '\0';
+    117                      
+    118                uart_count = 0;
+    119              
+    120                U0CSR |= 0x40;  //‘ –ÌΩ” ’£ª
+    121                
+    122                return re_val;
+    123          }
+    124          
+
+Errors: 1
+Warnings: none
